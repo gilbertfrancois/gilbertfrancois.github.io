@@ -1,17 +1,15 @@
 # Hello World, compile, run and debug on openMSX
 
-### 
-
 Step 1: Watch the tutorial from ChibiAkumas to know what the code is doing:
 
 [Lesson H3 - Hello World on the MSX by ChibiAkumas](https://www.chibiakumas.com/z80/helloworld.php#LessonH3)
 
 
 
-|                                                              |
-| ------------------------------------------------------------ |
-| ![](/Users/gilbert/Development/git/gilbertfrancois.github.io/01_helloworld_01.png) |
-| Hello world, printed in screen 0.                            |
+|                                   |                           |
+| --------------------------------- | ------------------------- |
+| ![](01_helloworld_01.png)         | ![](01_helloworld_02.png) |
+| Hello world, printed in screen 0. | openMSX Debugger          |
 
 
 
@@ -28,9 +26,14 @@ Step 2: Type in the code below and save to a file named `helloworld.asm`.
 
 RomSize equ $4000
 CHPUT   equ $00A2
+CHMOD   equ $005f
 
 FileStart:
 Main:
+		; set VDP to screen 0
+		ld a, 0
+		call CHMOD
+		; print "Hello world" on screen
     ld hl, helloWorld
     call PrintStr
     call NewLn
@@ -65,17 +68,23 @@ FileEnd:
 
 ```
 
+
+
 Step 3: Compile
 
 ```shell
 $ vasmz80_oldstyle helloworld.asm -chklabels -nocase -Dvasm=1 -Fbin -L out.sym -o out.rom
 ```
 
+
+
 Step 4: run with openMSX
 
 ```shell
 $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
 ```
+
+
 
 Step 5: connect with debugger
 
