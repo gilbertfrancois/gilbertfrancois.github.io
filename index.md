@@ -2,7 +2,7 @@
 
 _Gilbert François Duivesteijn_
 
-
+<img src="00_index_00.jpg" alt="00_index_00" style="zoom:10%;" />
 
 ## Abstract
 
@@ -12,6 +12,8 @@ These pages are intended to get you up and running with assembly for MSX1. The f
 -  [MSX2-Technical-Handbook](https://konamiman.github.io/MSX2-Technical-Handbook/)
 
 - [MSX Assembly Page](http://map.grauw.nl)
+
+
 
 ## What you need
 
