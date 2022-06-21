@@ -30,5 +30,5 @@ For developing on a real MSX1, I will show
 
 ## Chapters
 
-- [Hello World, compiling, running and debugging with openMSX](01_helloworld.html)
+- [Hello World, compiling, running and debugging with openMSX](01_helloworld_openmsx.html)
 
