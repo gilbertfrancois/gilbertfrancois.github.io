@@ -6,10 +6,6 @@ _Gilbert François Duivesteijn_
 
 ## Abstract
 
-Around 1986, as a young boy, I did some assembly programming on the MSX using Champ Assembler. I found it hard to learn. There was no internet and I had no access to many books on this topic . Moreover, if you were stuck, you could not reach out to a forum or StackOverflow. Now, I started again to learn and refresh some knowledge on this topic. However, having modern computers and cross compiling is possible, it was still not trivial to get the first code running on a real MSX computer. 
-
-
-
 These pages are intended to get you up and running with assembly for MSX1. The focus will be mainly on how to get from code to a running program on an *emulated* and *real* MSX. The page won't go deep into learning actual assembly. There are excellent resources for that. I can recommend you to look at:
 
 - [Learn Multi platform Z80 Assembly Programming... With Vampires!](https://www.chibiakumas.com/z80/)
@@ -34,6 +30,5 @@ For developing on a real MSX1, I will show
 
 ## Chapters
 
-- [Hello World](01_helloworld.md)
-- 
+- [Hello World, compiling, running and debugging with openMSX](01_helloworld.html)
 
