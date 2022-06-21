@@ -1,6 +1,6 @@
 # Hello World, compile, run and debug on openMSX
 
-Step 1: Watch the tutorial from ChibiAkumas to know what the code is doing:
+**Step 1**: Watch the tutorial from ChibiAkumas to know what the code is doing:
 
 [Lesson H3 - Hello World on the MSX by ChibiAkumas](https://www.chibiakumas.com/z80/helloworld.php#LessonH3)
 
@@ -13,7 +13,7 @@ Step 1: Watch the tutorial from ChibiAkumas to know what the code is doing:
 
 
 
-Step 2: Type in the code below and save to a file named `helloworld.asm`. 
+**Step 2**: Type in the code below and save to a file named `helloworld.asm`. 
 
 ```asm
     ; org statement before the header
@@ -70,15 +70,23 @@ FileEnd:
 
 
 
-Step 3: Compile
+**Step 3**: Compile
+
+*with VASM*
 
 ```shell
 $ vasmz80_oldstyle helloworld.asm -chklabels -nocase -Dvasm=1 -Fbin -L out.sym -o out.rom
 ```
 
+*or with Glass (you can choose)*
+
+```shell
+$ java -jar Glass.jar helloworld.asm -L out.sym out.rom
+```
 
 
-Step 4: run with openMSX
+
+**Step 4**: run with openMSX
 
 ```shell
 $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
@@ -86,10 +94,29 @@ $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
 
 
 
-Step 5: connect with debugger
+**Step 5**: connect with openMSX Debugger
 
 - Open the openMSX debugger
 - Press `Connect`
 - To see the symbols and have a better experience when stepping through the source file, click on `sym` button and add the file `out.sym`.
 - Set breakpoints (if you want) and click in the menu on `System` -> `Reboot Emulator` 
 
+---
+
+
+
+Optional steps :)
+
+**Step 6**: Write a real cartridge (e.g. the [MegaFlashROM](https://www.msxcartridgeshop.com)) and run on a MSX
+
+- Copy the file out.rom to a microSD card
+
+- Insert the microSD card in the MegaFlashRom, start your MSX.
+
+- In the Nextor (msx-dos) prompt, type:
+
+  ```
+  todo....
+  ```
+
+  
