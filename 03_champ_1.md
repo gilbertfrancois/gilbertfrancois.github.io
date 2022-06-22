@@ -45,19 +45,61 @@ Champ has 4 modes, Insert, Edit, Assemble and Debug. You can switch between the 
 
 ### `<ASSEMBLE>` mode commands
 
-*[WORK IN PROGRESS]*
+| Key   | Prompt        | Function                  |
+| ----- | ------------- | ------------------------- |
+| `F`   | `Find =>`     | Find a string             |
+| `N`   | `Next =>`     | FInd a string             |
+| `L`   | `Load =>`     | Load a source file        |
+| `W`   | `Save =>`     | Save a source file        |
+| `V`   | `Verify =>`   | Verify a source file      |
+| `P`   | `Print =>`    | Print value of expression |
+| `Q`   | `Quit =>`     | Quit to Basic             |
+| `M`   |               | Enter `<DEBUG>`           |
+| `esc` |               | Enter `<EDIT>`            |
+| `A`   | `Assemble =>` | Assemble program          |
+
+### Assembly options
+
+|                                  |      |
+| -------------------------------- | ---: |
+| Syntax check only                |    0 |
+| Display full list on screen      |   +1 |
+| Load M/Code into memory          |   +2 |
+| Copy screen to printer           |   +4 |
+| Double line list                 |  +10 |
+| Suppress display of symbol table |  +40 |
+
+Note: These are hexadecimal numbers. Combining multiple options can be done by adding the hex option numbers.
+
+
 
 ### `<INSERT>` mode commands
 
-*[WORK IN PROGRESS]*
+Change between `<insert>` and `<edit>` mode by pressing `<enter>`. It takes a bit of time to get used to it. The edit mode has 3 colums:
+
+| Label                                                        | Instruction                                                  | Operant                                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| String of max **6 characters**. A label does not require a colon. | Assembly language mnemonics as in Z80 specifications, 2 to 4 characters long. | Operants may be hex constants (preceded by `$`), labels symbols, or expressions. Decimal, octal and binary constants are not permitted. |
+
+
 
 ### `<EDIT>` mode commands
 
-*[WORK IN PROGRESS]*
+| Key          | Effect                                |
+| ------------ | ------------------------------------- |
+| `<up>`       | Move one line up                      |
+| `<down>`     | Move one line down                    |
+| `[ctrl] [u]` | Move up one page                      |
+| `[ctrl] [d]` | Move down one page                    |
+| `[ctrl] [t]` | Move to top of the source file        |
+| `[ctrl] [b]` | Move to the bottom of the source file |
+| `[ctrl] [z]` | Delete current line                   |
+| `[esc]`      | Enters `<ASSEMBLE>` mode              |
+| `[ret]`      | Enters `<INSERT>` mode                |
+
+
 
 ### `<DEBUG>` mode commands
-
-
 
 
 | Command | Effect |

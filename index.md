@@ -2,8 +2,6 @@
 
 _Gilbert François Duivesteijn_
 
-<img src="00_index_00.jpg" alt="00_index_00" style="zoom:10%;" />
-
 ## Abstract
 
 I started these pages to document my journey into programming with assembly for the MSX1. It is hard to start, to learn and choose the right tools. Although there are plenty of very good resources on the web, most of them assume that you already have a good working development environment or basic knowledge about assembly for the Z80. The first pages will be about getting your first code compiled and working in an emulator and even on a real MSX. I think what is missing on the internet is knowledge of how to develop directly on a real MSX, especially on an MSX1. These pages will show you how you can do that. It's fun!
@@ -12,7 +10,7 @@ The page won't go deep into learning actual assembly. There are excellent resour
 
 - [Learn Multi platform Z80 Assembly Programming... With Vampires!](https://www.chibiakumas.com/z80/)
 
--  [MSX2-Technical-Handbook](https://konamiman.github.io/MSX2-Technical-Handbook/)
+- [MSX2-Technical-Handbook](https://konamiman.github.io/MSX2-Technical-Handbook/)
 
 - [MSX Assembly Page](http://map.grauw.nl)
 
