@@ -15,7 +15,7 @@ _Gilbert Francois Duivesteijn_
 
 
 
-**Step 2**: Type in the code below and save to a file named `helloworld.asm`. 
+**Step 2**: Type in the code below and save to a file named `helloworld.asm`.  (Link to Github)
 
 ```assembly
     ; org statement before the header

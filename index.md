@@ -36,6 +36,11 @@ For developing on a PC or Mac, you need
 
 ## Chapters
 
-- [Hello World: compile, run and debug on openMSX](01_helloworld_openmsx.html) 
+- [Hello World: compile, run and debug on openMSX](01_helloworld_openmsx.html)
+
+  This page shows you in the shortest possible way how to develop and debug using an emulator on modern hardware and run the program from a cartridge on a real MSX!
+
 - [How to create a ROM, BIN or CAS file](02_rombincas.html)
+
+  Templates for compiling your program to disk, cassette or cartridge.
 
