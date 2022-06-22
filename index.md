@@ -20,7 +20,7 @@ The page won't go deep into learning actual assembly. There are excellent resour
 
 - [Practical MSX machine code programming, Steve Webb](https://archive.org/details/practical_msx_machine_code_programming_steve_webb)
 
-#### Developing with ASM on modern hardware
+#### What you need
 
 For developing on a PC or Mac, you need
 
@@ -29,11 +29,9 @@ For developing on a PC or Mac, you need
 - an assembler, e.g. [VASM](http://www.compilers.de/vasm.html) or [Glass](http://www.grauw.nl/projects/glass/),
 - an emulator, e.g. [openMSX](https://openmsx.org), optionally with [openMSX Debugger](https://openmsx.org).
 
-#### Developing with ASM on a real MSX1
+For developing with ASM on a real MSX1, I recommend
 
-- [Champ, by PSS](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip). For me, it  was the best assembler for MSX1. It has a build in editor, debugger and monitor, all running on a MSX1. Fun fact: Champ has been created by the legendary [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie), the creator of the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)).
-
- 
+- [Champ, by PSS](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip). It has a build in editor, debugger and monitor, all running on a MSX1.  
 
 ## Howto's: Cross platform development
 
@@ -45,7 +43,12 @@ For developing on a PC or Mac, you need
 
   Templates for compiling your program to disk, cassette or cartridge.
 
-## Howto's: Development on vintage hardware
+## Howto's: Development on a real MSX1
 
 - [Champ: First steps and key bindings](03_champ_1.html)
+
+  This page tries to be a good reference for all the keybindings and work flows.
+
 - [Champ: Assembler -> Basic -> Assembler roundtrip](03_champ_2.html)
+
+​		Hands-on example.
