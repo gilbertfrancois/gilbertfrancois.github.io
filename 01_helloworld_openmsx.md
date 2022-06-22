@@ -6,16 +6,15 @@ _Gilbert Francois Duivesteijn_
 
 
 
+The picture below shows the final result on a real MSX, running from cartridge. Follow the steps below and you have it running yourself in minutes.
+
+![](01_helloworld_title01.jpg)
+
+
+
 **Step 1**: Watch the tutorial from ChibiAkumas to know what the code is doing:
 
 [Lesson H3 - Hello World on the MSX by ChibiAkumas](https://www.chibiakumas.com/z80/helloworld.php#LessonH3)
-
-
-
-|                                   |                           |
-| --------------------------------- | ------------------------- |
-| ![](01_helloworld_01.png)         | ![](01_helloworld_02.png) |
-| Hello world, printed in screen 0. | openMSX Debugger          |
 
 
 
@@ -107,11 +106,11 @@ $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
 - To see the symbols and have a better experience when stepping through the source file, click on `sym` button and add the file `out.sym`.
 - Set breakpoints (if you want) and click in the menu on `System` -> `Reboot Emulator` 
 
+![Debugger](01_helloworld_02.png)
+
 ---
 
 
-
-Optional steps :)
 
 **Step 6**: Write a real cartridge (e.g. the [MegaFlashROM](https://www.msxcartridgeshop.com)) and run on a MSX
 
