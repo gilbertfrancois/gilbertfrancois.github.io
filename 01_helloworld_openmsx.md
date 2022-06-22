@@ -123,7 +123,7 @@ Optional steps :)
 
 - Reboot the computer and.... congratulations with your first self created ROM on cartridge!
 
-<video autoplay="autoplay" loop="looop" controls="control">
+<video autoplay="autoplay" loop="loop" controls="control">
 	<source src="01_helloworld.mp4" type="video/mp4"/>  		
 	Your Browser does not support the video element
 </video>
