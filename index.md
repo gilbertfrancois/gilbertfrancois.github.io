@@ -44,14 +44,18 @@ For developing with ASM on a real MSX1, I recommend
 - [How to create a ROM, BIN or CAS file](02_rombincas.html)
 
   Templates for compiling your program to disk, cassette or cartridge.
+  
+- [Hello Screen2: VDP programming for MSX1](04_helloscreen2.html)
+
+  Bare minimum example on how to create graphics in screen 2 on an MSX1.
 
 ## Howto's: Development on a real MSX1
 
-- [Champ: First steps and key bindings](03_champ_1.html)
+- [Champ: Introduction and key bindings](03_champ_1.html)
 
   This page tries to be a good reference for all the keybindings and work flows.
 
-- [Champ: Hello World, develop, compile and run on a real MSX1!](03_champ_3.html)
+- [Champ: Hello World, your first program, made on a real MSX1!](03_champ_3.html)
 
   This tutorial shows how to develop on actual vintage hardware, using the same source code as the [Hello World: openMSX](01_helloworld_openmsx.html) tutorial.
 

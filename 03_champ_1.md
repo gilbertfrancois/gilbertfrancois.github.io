@@ -1,4 +1,4 @@
-# Champ: First steps and key bindings
+# Champ: Introduction and key bindings
 
 *Gilbert François Duivesteijn*
 

@@ -1,4 +1,4 @@
-# Champ: Hello world!
+# Champ: Hello World, your first program, made on a real MSX1!
 
 _Gilbert Francois Duivesteijn_
 
@@ -12,7 +12,7 @@ The picture below shows the final result on a real MSX, loaded as binary from a 
 
 
 
-The tutorial is as close as possible equal to the version on a PC, described [here](01_helloworld_openmsx.html).
+The tutorial is as close as possible equal to the version cross-platform developed on a PC or Mac, described [here](01_helloworld_openmsx.html).
 
 
 
@@ -22,7 +22,7 @@ The tutorial is as close as possible equal to the version on a PC, described [he
 
 
 
-**Step 2**: Type in the code below and save to a file named `hellow.  (Link to Github)
+**Step 2**: Type in the code below and save to a file named "hellow".
 
 ```assembly
         ORG   $C000
@@ -65,3 +65,8 @@ Note the small differences, compared to the parallel example where we create a R
 | Moment of truth. The source file and binary file have been saved to tape. Let's **reset** the computer, **rewind** the tape and run our fresh made program: `bload"cas:",r` | ![Champ 02](03_champ208.png) |
 | Yay!                                                         | ![Champ 02](03_champ209.png) |
 
+## Download links
+
+- [](): WAV file with the source code. Record the sound to cassette and load it in Champ with the command `<ASSEMBLER> L => HELLOW` .
+
+- 
