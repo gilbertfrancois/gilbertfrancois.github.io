@@ -10,7 +10,7 @@ On this page, I try to explain how to use Champ for MSX(1) to write, store and d
 
 *Fun fact: Champ has been created by the legendary [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie), the creator of the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)). By using this program, you work with legacy of computer history.*
 
-The aim of this page is to show how you can develop and debug on a real MSX with only a cassette player/recorder as storage device, like it was done in the 80's with an MSX1 computer. If you don't have Champ, you can get it [here](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip). Now insert your cassette in the datarecorder, type `bload"cas:",r` and let's have some fun!
+The aim of this page is to show how you can develop and debug on a real MSX with only a cassette player/recorder as storage device, like it was done in the 80's with an MSX1 computer. If you don't have Champ, you can get it [here](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip). The manual is [here](champ_msx.pdf). Now insert your cassette in the datarecorder, type `bload"cas:",r` and let's have some fun!
 
 |                           |                          |
 | :-----------------------: | :----------------------: |
@@ -141,8 +141,9 @@ Change between `<insert>` and `<edit>` mode by pressing `<enter>`. It takes a bi
 
 ## References
 
-[Champ MSX Users Manual](./assets/doc/champ_msx.pdf)
+[Champ (link to file-hunter)](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip)
 
-[Champ ZX Spectrum Users Manual](./assets/doc/champ_zxspectrum.pdf)
+[Champ MSX Users Manual](champ_msx.pdf)
 
-[Champ for ZX Spectrum](https://spectrumcomputing.co.uk/entry/8012/ZX-Spectrum/Champ)
+[Champ ZX Spectrum Users Manual](champ_zxspectrum.pdf)
+
