@@ -13,14 +13,14 @@ I started these pages to document my journey into programming with assembly for 
 The page won't go deep into learning actual assembly. There are excellent resources for that. I can recommend you to look at:
 
 - [Learn Multi platform Z80 Assembly Programming... With Vampires!](https://www.chibiakumas.com/z80/)
-
 - [MSX2-Technical-Handbook](https://konamiman.github.io/MSX2-Technical-Handbook/)
-
 - [MSX Assembly Page](http://map.grauw.nl)
-
 - [MSX wiki](https://www.msx.org/wiki/Category:Programming#Programming_Software)
-
 - [Practical MSX machine code programming, Steve Webb](https://archive.org/details/practical_msx_machine_code_programming_steve_webb)
+- [Programming the Z80, Zaks](https://www.amazon.com/Programming-Z80-Rodnay-Zaks/dp/0895880695)
+- [Learn Multiplatform Assembly Programming with ChibiAkumas, Volume 1](https://www.amazon.com/Learn-Multiplatform-Assembly-Programming-ChibiAkumas/dp/B08W7DWZB3/)
+- [Learn Multiplatform Assembly Programming with ChibiAkumas, Volume 2](https://www.amazon.com/Learn-Multiplatform-Assembly-Programming-ChibiAkumas/dp/B09VWHYDKJ/)
+- [Z80 Assembly Language Programming, Leventhal](https://www.amazon.com/gp/product/0931988217/)
 
 #### What you need
 
@@ -37,35 +37,17 @@ For developing with ASM on a real MSX1, I recommend
 
 ## Howto's: Cross platform development
 
-- [Hello World: compile, run and debug on openMSX](01_helloworld_openmsx.html)
-
-  This page shows you in the shortest possible way how to develop and debug using an emulator on modern hardware and run the program from a cartridge on a real MSX!
-
-- [How to create a ROM, BIN or CAS file](02_rombincas.html)
-
-  Templates for compiling your program to disk, cassette or cartridge.
-  
+- [Hello World: compile, run and debug on openMSX, deploy on a real cartridge](01_helloworld_openmsx.html)
 - [Hello Screen2: VDP programming for MSX1](04_helloscreen2.html)
-
-  Bare minimum example on how to create graphics in screen 2 on an MSX1.
+- [How to create a ROM, BIN or CAS file](02_rombincas.html)
 
 ## Howto's: Development on a real MSX1
 
 - [Champ: Introduction and key bindings](03_champ_1.html)
-
-  This page tries to be a good reference for all the keybindings and work flows.
-
 - [Champ: Hello World, your first program, made on a real MSX1!](03_champ_3.html)
-
-  This tutorial shows how to develop on actual vintage hardware, using the same source code as the [Hello World: openMSX](01_helloworld_openmsx.html) tutorial.
-
 - [Champ: Assembler -> Basic -> Assembler roundtrip](03_champ_2.html)
 
-  Hands-on example where a basic program interacts with an assembled program in memory.
-
 - Champ: Debug, monitor registers, step though code.  *(Coming soon!)*
-
-  This tuturial shows how to go through code line by line, inspect the registers, find locations of labels and more...
 
  
 

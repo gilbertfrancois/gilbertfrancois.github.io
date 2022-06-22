@@ -266,3 +266,9 @@ Now you should see 3 coloured blocks as in the first example.
 
 -  [VDP programming tutorial :: VRAM timings](http://map.grauw.nl/articles/vdp_tut.php#vramtiming)
 - [Overview of MSX 1 BIOS Functions](http://map.tni.nl/resources/msxbios.php#msx1bios)
+- [V9918 programmer's guide (MSX1)](ti-vdp-programmers-guide.pdf)
+
+- [V9938 programmer's guide (MSX2)](http://rs.gr8bit.ru/Documentation/V9938-programmers-guide.pdf)
+
+- [More Screen2 for MSX1 example code](https://www.msx.org/forum/development/msx-development/getting-started-msx-coding-assembler)
+
