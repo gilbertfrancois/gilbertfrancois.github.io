@@ -1,4 +1,6 @@
-# Hello World, compile, run and debug on openMSX
+# Hello World: compile, run and debug on openMSX
+
+_Gilbert Francois Duivesteijn_
 
 **Step 1**: Watch the tutorial from ChibiAkumas to know what the code is doing:
 
@@ -15,7 +17,7 @@
 
 **Step 2**: Type in the code below and save to a file named `helloworld.asm`. 
 
-```asm
+```assembly
     ; org statement before the header
     org $4000
 
@@ -115,8 +117,16 @@ Optional steps :)
 
 - In the Nextor (msx-dos) prompt, type:
 
-  ```
-  todo....
+  ```shell
+  B:> opfxsd out.rom
   ```
 
-  
+- Reboot the computer and.... congratulations with your first self created ROM on cartridge!
+
+<video autoplay="autoplay" loop="looop">
+	<source src="01_helloworld.mp4" type="video/mp4"/>  		
+	Your Browser does not support the video element
+</video>
+
+- To erase the ROM on the cartridge, reboot the machine and hold the `arrow up` key. In the recovery mode, choose `F1 - Erase MegaFlashROM`. Now it is ready for your next program.
+
