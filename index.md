@@ -51,4 +51,4 @@ For developing with ASM on a real MSX1, I recommend
 
 - [Champ: Assembler -> Basic -> Assembler roundtrip](03_champ_2.html)
 
-​		Hands-on example.
+  Hands-on example where a basic program interacts with an assembled program in memory.
