@@ -2,6 +2,10 @@
 
 _Gilbert Francois Duivesteijn_
 
+[< Back to main page](index.html)
+
+
+
 When programming and compiling your assembly program, you have to choose how the program will be distributed. For each medium, the compiled binary requires a special header and sometimes a special footer. 
 
 ## ROM
