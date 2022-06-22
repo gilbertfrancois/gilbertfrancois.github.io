@@ -51,11 +51,17 @@ For developing with ASM on a real MSX1, I recommend
 
   This page tries to be a good reference for all the keybindings and work flows.
 
+- [Champ: Hello World, develop, compile and run on a real MSX1!](03_champ_3.html)
+
+  This tutorial shows how to develop on actual vintage hardware, using the same source code as the [Hello World: openMSX](01_helloworld_openmsx.html) tutorial.
+
 - [Champ: Assembler -> Basic -> Assembler roundtrip](03_champ_2.html)
 
   Hands-on example where a basic program interacts with an assembled program in memory.
 
+- Champ: Debug, monitor registers, step though code.  *(Coming soon!)*
 
+  This tuturial shows how to go through code line by line, inspect the registers, find locations of labels and more...
 
  
 
