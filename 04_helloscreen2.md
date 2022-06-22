@@ -265,3 +265,4 @@ Now you should see 3 coloured blocks as in the first example.
 ## References 
 
 -  [VDP programming tutorial :: VRAM timings](http://map.grauw.nl/articles/vdp_tut.php#vramtiming)
+- [Overview of MSX 1 BIOS Functions](http://map.tni.nl/resources/msxbios.php#msx1bios)
