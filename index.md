@@ -8,7 +8,9 @@ _Gilbert François Duivesteijn_
 
 ## Abstract
 
-I started these pages to document my journey into programming with assembly for the MSX1. It is hard to start, to learn and choose the right tools. Although there are plenty of very good resources on the web, most of them assume that you already have a good working development environment or basic knowledge about assembly for the Z80. The first pages will be about getting your first code compiled and working in an emulator and even on a real MSX. I think what is missing on the internet is knowledge of how to develop directly on a real MSX, especially on an MSX1. Most development tools that run on native hardware are for MSX2 only. These pages will show you how you can develop on an MSX1, like it was done in 1984. It's fun!
+I started these pages to document my journey into programming with assembly for the MSX1. It is hard to start, to learn and choose the right tools. Although there are plenty of very good resources on the web, most of them assume that you already have a good working development environment or basic knowledge about assembly for the Z80. The *"Hello world"* and *"Hello Screen2"* pages will take you step by step in getting your first lines of code compiled and working in an emulator *and* on a real MSX. 
+
+I think what is missing on the internet is knowledge of how to develop directly on a real MSX, especially on an MSX1. Most development tools that run on native hardware are for MSX2 only. The *"Champ: ..."* pages will show you how you can develop on an MSX1, like it was done in 1984. It's fun!
 
 The page won't go deep into learning actual assembly. There are excellent resources for that. Please have a look at the references at the bottom of this page. 
 
@@ -39,7 +41,7 @@ For developing for MSX on a real MSX1, I recommend
 
 - [Champ: Introduction and key bindings](03_champ_1.html)
 - [Champ: Hello World, your first program, made on a real MSX1!](03_champ_3.html)
-- Champ: Hello Screen2: VDP programming for MSX1 *(Coming soon!)*
+- [Champ: Hello Screen2: VDP programming for MSX1](04_helloscreen2_champ.html)
 - [Champ: Assembler -> Basic -> Assembler roundtrip](03_champ_2.html)
 
 - Champ: Debug, monitor registers, step though code.  *(Coming soon!)*
