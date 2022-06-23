@@ -44,7 +44,7 @@ For developing for MSX on a real MSX1, I recommend
 - [Champ: Hello Screen2: VDP programming for MSX1](04_helloscreen2_champ.html)
 - [Champ: Assembler -> Basic -> Assembler roundtrip](03_champ_2.html)
 
-- Champ: Debug, monitor registers, step though code.  *(Coming soon!)*
+- Champ: Debug, set breakpoints, monitor registers, step though code.  *(Coming soon!)*
 
  
 
