@@ -8,7 +8,7 @@ _Gilbert Francois Duivesteijn_
 
 The goal of this page is to show how to create graphics in screen mode 2. The examples in this page are the very minimum to create a tile, an 8x8 pixel sized block and copy the tile 2 times more using the pattern name table.
 
-For more in-depth information about the code itself, read [Hello Screen2: VDP programming for MSX1](04_helloscreen2.html). This page is more focussed on how to develop it on a real MSX with Champ.
+For more in-depth information about the code itself, read [Hello Screen2: VDP programming for MSX1](04_helloscreen2.html). This page is more focussed on how to develop it on a real MSX with Champ. There are **download links** for the source code (in Champ format) and binary at the bottom of the page.
 
 ## But first....
 
@@ -99,3 +99,9 @@ Here, the code example of [Hello Screen2: VDP programming for MSX1](04_helloscre
 </table>
 
 In the next tutorial, we will look deeper into Champ on how to use the debugger and monitor.
+
+## Resources
+
+[HS2SRC (source code)](04_helloscreen2_src.wav)
+
+[HS2BIN (binary code)](04_helloscreen2_bin.wav)
