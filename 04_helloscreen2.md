@@ -4,7 +4,7 @@ _Gilbert Francois Duivesteijn_
 
 [< Back to main page](index.html)
 
-![](/Users/gilbert/Development/git/gilbertfrancois.github.io/04_helloscreen2_title.jpg)
+![](04_helloscreen2_title.jpg)
 
 The goal of this page is to show how to create graphics in screen mode 2. The examples in this page are the very minimum to create a tile, an 8x8 pixel sized block. Both examples give the output as seen in the screenshot above.
 
