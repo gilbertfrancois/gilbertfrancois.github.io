@@ -18,7 +18,7 @@ The picture below shows the final result on a real MSX, running from cartridge. 
 
 
 
-**Step 2**: Type in the code below and save to a file named `helloworld.asm`.  (Link to Github)
+**Step 2**: Type in the code below and save to a file named `helloworld.asm`.  [Link to GitHub](https://github.com/gilbertfrancois/msx/tree/master/src/asm/01_helloworld)
 
 ```assembly
     ; org statement before the header
@@ -112,13 +112,13 @@ $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
 
 
 
-**Step 6**: Write a real cartridge (e.g. the [MegaFlashROM](https://www.msxcartridgeshop.com)) and run on a MSX
+**Step 6**: Flash a cartridge, the [MegaFlashROM](https://www.msxcartridgeshop.com) and run your program on a MSX like a pro:
 
 - Copy the file out.rom to a microSD card
 
 - Insert the microSD card in the MegaFlashRom, start your MSX.
 
-- In the Nextor (msx-dos) prompt, type:
+- In the Nextor (MSX-DOS alike) prompt, type:
 
   ```shell
   B:> opfxsd out.rom
