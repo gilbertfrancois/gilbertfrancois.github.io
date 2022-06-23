@@ -6,7 +6,7 @@
 
 
 
-On this page, I try to explain how to use Champ for MSX(1) to write, store and deploy programs written in assembly or hybrid basic-assembly. Back in the days, around 1986 and beyond, I liked Champ a lot. It was easy to use, because it was an all-in-one editor, assembler, disassembler, monitor/debugger. On top of it, one could easily escape to basic to test the compiled program, which is still in memory and go back to Champ to do further programming. But the most killer feature was that you can step through code line by line, inspecting registers and memory values. 
+On these Champ pages, I try to explain how to use Champ for MSX(1) to write, store and deploy programs written in assembly or hybrid basic-assembly. Back in the days, around 1986 and beyond, I liked Champ a lot. It was easy to use, because it was an all-in-one editor, assembler, disassembler, monitor/debugger. On top of it, one could easily escape to basic to test the compiled program, which is still in memory and go back to Champ to do further programming. But the most killer feature was that you can step through code line by line, inspecting registers and memory values. 
 
 *Fun fact: Champ has been created by the legendary [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie), the creator of the [C programming language](https://en.wikipedia.org/wiki/C_(programming_language)). By using this program, you work with legacy of computer history.*
 
@@ -79,7 +79,7 @@ Change between `<insert>` and `<edit>` mode by pressing `<enter>`. It takes a bi
 
 | Label                                                        | Instruction                                                  | Operant                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| String of max **6 characters**. A label does not require a colon. | Assembly language mnemonics as in Z80 specifications, 2 to 4 characters long. | Operants may be hex constants (preceded by `$`), labels symbols, or expressions. Decimal, octal and binary constants are not permitted. |
+| String of max **6 characters**. A label does not require a colon. Press `[space]` if the line has no label. | Assembly language mnemonics as in Z80 specifications, 2 to 4 characters long. | Operants may be hex constants (preceded by `$`), labels symbols, or expressions. Decimal, octal and binary constants are not permitted. |
 
 
 
@@ -125,20 +125,6 @@ Change between `<insert>` and `<edit>` mode by pressing `<enter>`. It takes a bi
 
 
 
-
-## Some final notes:
-
-- Champ has 3 columns: label, command, arguments.
-- Press space if the line does not start with a label, to go to the next column.
-- In edit mode, delete a line with `ctrl` `z`.
-- Labels start with a letter, are max 6 characters long and have no `:` at the end.
-- Hexadecimal addresses start with a `$`.
-- Best ORG address $C000 (according to Champ).
-
-
-
-
-
 ## References
 
 [Champ (link to file-hunter)](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip)
@@ -147,3 +133,8 @@ Change between `<insert>` and `<edit>` mode by pressing `<enter>`. It takes a bi
 
 [Champ ZX Spectrum Users Manual](champ_zxspectrum.pdf)
 
+
+
+---
+
+*Special note: A big "thank you" goes to [Denis Kovasevic](http://gems-lighted.com) who helped me with a replacement of my lost boxed version of Champ.*
