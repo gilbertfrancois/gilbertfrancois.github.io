@@ -61,7 +61,7 @@ Here, the code example of [Hello Screen2: VDP programming for MSX1](04_helloscre
         <td style="width: 50%;"></td>
     </tr>
     <tr>
-        <td>Type in the listing. Note that there are slight differences between this code and the one from the other "Hello Screen2" tutorial. First, Champ cannot have binary numbers. The data for the pattern PAT0 is in HEX. Second, when having arithmetics in the code, like in line containing <tt>LD HL, $1800 + $41</tt>, only <i>one</i> + or - sign is allowed. Third, at the end, a <tt>ENDPROG</tt> label is added. This will help later when saving the binary to cassette.</td>
+        <td>Type in the listing. Note that there are slight differences between this code and the one from the other "Hello Screen2" tutorial. First, Champ cannot have binary numbers. The data for the pattern PAT0 is in HEX. Second, when having arithmetics in the code, like in line containing <tt>LD HL, $1800 + $41</tt>, only <i>one</i> + or - sign is allowed. Third, at the end, a <tt>ENDPROG</tt> label is added. This will help later when saving the binary to cassette. When you don't want to type the code in yourself, you can download the source code on the bottom of this page.</td>
         <td><img src="04_helloscreen2_champ0002a.png"></td>
     </tr>
     <tr>
