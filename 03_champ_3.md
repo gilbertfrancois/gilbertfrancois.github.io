@@ -18,7 +18,7 @@ The tutorial is as close as possible equal to the version cross-platform develop
 
 
 
-**Step 2 and beyond...**
+**Step 2:** Follow the description below...
 
 | Description                                                  | Screenshot                          |
 | ------------------------------------------------------------ | ----------------------------------- |
@@ -32,6 +32,10 @@ The tutorial is as close as possible equal to the version cross-platform develop
 | Moment of truth. The source file and binary file have been saved to tape. Let's **reset** the computer, **rewind** the tape and run our fresh made program: `bload"cas:",r` | ![Champ 02](03_champ208.png)        |
 | Yay!                                                         | ![Champ 02](03_champ209.png)        |
 
+
+
 ## Download links
 
 - [helloworld_source](helloworld_src.wav): WAV file with the source code. Record the sound to cassette and load it in Champ with the command `<ASSEMBLER> L => [ret]` .
+
+- [helloworld_bin](helloworld_bin.wav): WAV file with the binary. Record the sound to cassette and load it in MSX Basic with the command `bload"cas:",r`.
