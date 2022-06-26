@@ -4,11 +4,9 @@ _Gilbert Francois Duivesteijn_
 
 [< Back to main page](index.html)
 
-
-
-The picture below shows the final result on a real MSX, running from cartridge. Follow the steps below and you have it running yourself in minutes.
-
 ![](01_helloworld_title01.jpg)
+
+The picture above shows the final result on a real MSX, running from cartridge. Follow the steps below and you have it running yourself in minutes.
 
 
 
