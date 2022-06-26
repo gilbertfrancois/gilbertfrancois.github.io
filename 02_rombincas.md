@@ -4,7 +4,7 @@ _Gilbert Francois Duivesteijn_
 
 [< Back to main page](index.html)
 
-
+![](/Users/gilbert/Development/git/gilbertfrancois.github.io/02_rombincas.jpg)
 
 When programming and compiling your assembly program, you have to choose how the program will be distributed. For each medium, the compiled binary requires a special header and sometimes a special footer. 
 
