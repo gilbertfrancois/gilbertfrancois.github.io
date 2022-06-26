@@ -8,11 +8,13 @@ _Gilbert François Duivesteijn_
 
 ## Abstract
 
-I started these pages to document my journey into programming with assembly for the MSX1. It is hard to start, to learn and choose the right tools. Although there are plenty of very good resources on the web, most of them assume that you already have a good working development environment or basic knowledge about assembly for the Z80. The *"Hello world"* and *"Hello Screen2"* pages will take you step by step in getting your first lines of code compiled and working in an emulator *and* on a real MSX. 
+I started these pages to document my journey into programming with assembly for the MSX1. I made personal notes and decided to put them online. It is hard to start, to learn and choose the right tools. Although there are plenty of very good resources on the web, most of them assume that you already have a good working development environment or basic knowledge about assembly for the Z80. 
+
+The *"Hello world"* and *"Hello Screen2"* pages will take you step by step in getting your first lines of code compiled and working in an emulator *and* on a real MSX. But most of the pages will be more like a *"cookbook" setup*, showing one small topic, a technique or snippet on how to do something.  
 
 I think what is missing on the internet is knowledge of how to develop directly on a real MSX, especially on an MSX1. Most development tools that run on native hardware are for MSX2 only. The *"Champ: ..."* pages will show you how you can develop on an MSX1, like it was done in 1984. It's fun!
 
-The page won't go deep into learning actual assembly. There are excellent resources for that. Please have a look at the references at the bottom of this page. 
+
 
 #### What you need
 
