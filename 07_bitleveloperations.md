@@ -2,6 +2,8 @@
 
 _Gilbert Francois Duivesteijn_
 
+[< Back to main page](index.html)
+
 ![](07_bitleveloperations.jpg)
 
 The tutorial [Lesson 5 - Bit level operations, Self modifying code](https://www.chibiakumas.com/z80/index.php#Lesson5) of ChibiAkumas shows well the bit operations on the screen. This is shown on an Amstrad CPC and there, the video memory is directly accessible. To do the same on an MSX, we need to do a bit more steps:

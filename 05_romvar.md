@@ -2,6 +2,8 @@
 
 _Gilbert François Duivesteijn_
 
+[< Back to main page](index.html)
+
 When your program is compiled for cartridge as ROM, you cannot change values of variables in this memory area. For example:
 
 ```assembly
