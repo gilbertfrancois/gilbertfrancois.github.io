@@ -35,6 +35,7 @@ For developing for MSX on a real MSX1, I recommend
 - [Hello Screen2: VDP programming for MSX1](04_helloscreen2.html)
 - [How to create a ROM, BIN or CAS file](02_rombincas.html)
 - [Updating variables when compiling as ROM](05_romvar.html)
+- [Visualizing bit level operations](07_bitleveloperations.html)
 
 
 
@@ -62,7 +63,7 @@ For developing for MSX on a real MSX1, I recommend
 
 ## References
 
-- [Learn Multi platform Z80 Assembly Programming... With Vampires!](https://www.chibiakumas.com/z80/)
+- [Learn Multi platform Z80 Assembly Programming... With Vampires!](https://www.chibiakumas.com/z80/z80_2021.php)
 - [MSX2-Technical-Handbook](https://konamiman.github.io/MSX2-Technical-Handbook/)
 - [MSX Assembly Page](http://map.grauw.nl)
 - [MSX wiki](https://www.msx.org/wiki/Category:Programming#Programming_Software)
