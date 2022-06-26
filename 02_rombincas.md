@@ -54,7 +54,7 @@ FileEnd:
 
 The CAS template has the most complicated header file. The last part of the header is similar to that of the BIN template, but there are more magic numbers and the filename is included in the header. Note that the filename can contain only 6 characters.
 
-I reverse engineered these 3 lines of magic numbers by using the TAPE2CAS tool and [dhex](https://manpages.ubuntu.com/manpages/jammy/man1/dhex.1.html).  Until now it always worked for me but I cannot guarantee that it is a generic, always working solution.
+I reverse engineered these 3 lines of magic numbers by using the TAPE2CAS tool and [dhex](http://www.dettus.net/dhex/).  Until now it always worked for me but I cannot guarantee that it is a generic, always working solution.
 
 ```assembly
     ; CAS header with the filename
