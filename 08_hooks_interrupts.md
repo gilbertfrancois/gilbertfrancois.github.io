@@ -16,18 +16,15 @@ This page [MSX Wiki: System hooks](https://www.msx.org/wiki/System_hooks) gives 
 
 A recommended way to use hooks is:
 
-- Make a copy of the current hook. Especially on disk systems, you cannot assume that e.g. the HTIMI hook is empty.
-- Place a `jp addr` instruction at the place of the hook, pointing to your subroutine.
+- Make a copy of the current hook. For example, on disk systems, you cannot assume that the HTIMI hook is empty.
+- Place a `jp addr` instruction at the place of the hook, pointing to your subroutine. End the hook with `ret` instructions.
+- Make sure the length of the hook instruction is 5 bytes in size, overwrite all existing values to avoid bugs in case the hook was not empty.
 - Inside your subroutine, run your code, followed by a `jp old_hook_add` command.
 
-The example below is a minimal example, that gives a BEEP every second on a 50Hz machine.
+The example below is a minimal example, that gives a BEEP every second on a 50Hz machine. The HTIMI hook is used, which is triggered at the refresh rate of the screen (VBLANK). 
 
 ```assembly
 ; Simple interrupt test
-; Credits and references: 
-;    https://msx.org/forum/msx-talk/development/question-about-htimi-hook-fd9fh 
-;    https://msx.org/forum/msx-talk/hardware/way-detect-vblank-time
-;    https://www.youtube.com/watch?v=aUkHk_mjtOU
 
     ; BIN header
     db $FE
@@ -46,18 +43,30 @@ FileStart:
 Main:
     ; Install hook, run once
     di
-    ; Preserve old hook
+    ; Preserve old hook instructions
     ld de, OldHook
     ld hl, HTIMI
     ld bc, 5
     ldir
-    ; Install new hook
-    ld a, $c3              ; jp instruction opcode
-    ld (HTIMI), a          ; Set jp instruction into the hook memory address
-    ld hl, BeepFn          ; Load BeepFn addr
-    ld (HTIMI+1), hl       ; Set BeepFn memory addr after jp instruction
-    ei                     ; enable interrupts
+    ; Copy new hook instructions
+    ld hl, NewHook
+    ld de, HTIMI
+    ld bc, 5
+    ldir
+
+    ei
+
+    ; Return to Basic
     ret
+
+NewHook:
+    jp BeepFn
+    ret
+    nop
+
+OldHook:
+    ; Reserve 5 bytes to store the old hook
+    db 0, 0, 0, 0, 0
 
 BeepFn:
     ; Run at every interrupt
@@ -69,10 +78,6 @@ BeepFn:
     ld (hl), MaxCount
     call BEEP
 
-
-OldHook:
-    db 0, 0, 0, 0, 0
-
 Counter:
     db MaxCount
 
@@ -83,6 +88,12 @@ Compile with:
 
 ```shell
 $ java -jar Glass.jar beep.asm -L out.sym out.bin
+```
+
+On the MSX, load and run with:
+
+```shell
+bload"out.bin",r
 ```
 
 
