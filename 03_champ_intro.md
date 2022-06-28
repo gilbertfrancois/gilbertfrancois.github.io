@@ -4,7 +4,7 @@
 
 [< Back to main page](index.html)
 
-![](04_champ_header.jpg)
+![](assets/images/03_champ_intro_header.jpg)
 
 On these Champ pages, I try to explain how to use Champ for MSX(1) to write, store and deploy programs written in assembly or hybrid basic-assembly. Back in the days, around 1986 and beyond, I liked Champ a lot. It was easy to use, because it was an all-in-one editor, assembler, disassembler, monitor/debugger. On top of it, one could easily escape to basic to test the compiled program, which is still in memory and go back to Champ to do further programming. But the most killer feature was that you can step through code line by line, inspecting registers and memory values. 
 
@@ -12,10 +12,10 @@ On these Champ pages, I try to explain how to use Champ for MSX(1) to write, sto
 
 The aim of this page is to show how you can develop and debug on a real MSX with only a cassette player/recorder as storage device, like it was done in the 80's with an MSX1 computer. If you don't have Champ, you can get it [here](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip). The manual is [here](champ_msx.pdf). Now insert your cassette in the datarecorder, type `bload"cas:",r` and let's have some fun!
 
-|                           |                          |
-| :-----------------------: | :----------------------: |
-|   ![](03_champ000.jpg)    | ![](03_champtitle02.jpg) |
-| Box, manuals and cassette |       Title screen       |
+|                                          |                                          |
+| :--------------------------------------: | :--------------------------------------: |
+| ![](assets/images/03_champ_intro_01.jpg) | ![](assets/images/03_champ_intro_02.jpg) |
+|        Box, manuals and cassette         |               Title screen               |
 
 ## Modes
 
@@ -129,9 +129,9 @@ Change between `<insert>` and `<edit>` mode by pressing `<enter>`. It takes a bi
 
 [Champ (link to file-hunter)](https://download.file-hunter.com/Games/MSX1/CAS/Champ%20(1984)(PSS)%5BBLOAD'CAS-'%2CR%5D.zip)
 
-[Champ MSX Users Manual](champ_msx.pdf)
+[Champ MSX Users Manual](assets/downloads/champ_msx.pdf)
 
-[Champ ZX Spectrum Users Manual](champ_zxspectrum.pdf)
+[Champ ZX Spectrum Users Manual](assets/downloads/champ_zxspectrum.pdf)
 
 
 
