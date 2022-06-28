@@ -36,9 +36,10 @@ ProgEnd:
 This example won't work. The memory of MyVar lies inside the ROM. Let's look at the debugger and see what is happening. Pay special attention to memory location `$4018`, where `MyVar` is located.
 
 <video autoplay="autoplay" loop="loop" controls="control">
-	<source src="05_romvar_debug1.mp4" type="video/mp4"/>  		
+	<source src="assets/images/05_romvar_debug1.mp4" type="video/mp4"/>  		
 	Your Browser does not support the video element
 </video>
+
 
 
 In the section `Memory layout` of the debugger, we can see that page 0 and 1 are reserved for the ROM:
@@ -90,7 +91,7 @@ ProgEnd:
 First, we copy the initial values from ROM to RAM (when needed). Then we continue our original program, and can successfully change values in MyVarRam. You can see in the debugger that the increase of the value is successful.
 
 <video autoplay="autoplay" loop="loop" controls="control">
-	<source src="05_romvar_debug2.mp4" type="video/mp4"/>  		
+	<source src="assets/images/05_romvar_debug2.mp4" type="video/mp4"/>  		
 	Your Browser does not support the video element
 </video>
 
