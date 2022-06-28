@@ -49,7 +49,7 @@ Finish:
 In Champ, it will look something like in the screenshot below, where the **NOP** instructions stand for the body of the program.
 
 ![champ](04_helloscreen2_champ0002.png)
-÷
+
 
 ## Implementation of Method 1
 

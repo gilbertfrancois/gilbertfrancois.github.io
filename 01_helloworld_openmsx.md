@@ -4,7 +4,7 @@ _Gilbert Francois Duivesteijn_
 
 [< Back to main page](index.html)
 
-![](01_helloworld_title01.jpg)
+![](assets/images/01_helloworld_header.jpg)
 
 The picture above shows the final result on a real MSX, running from cartridge. Follow the steps below and you have it running yourself in minutes.
 
@@ -104,7 +104,7 @@ $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
 - To see the symbols and have a better experience when stepping through the source file, click on `sym` button and add the file `out.sym`.
 - Set breakpoints (if you want) and click in the menu on `System` -> `Reboot Emulator` 
 
-![Debugger](01_helloworld_02.png)
+![Debugger](assets/images/01_helloworld_02.png)
 
 ---
 
@@ -125,9 +125,10 @@ $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
 - Reboot the computer and.... congratulations with your first self created ROM on cartridge!
 
 <video autoplay="autoplay" loop="loop" controls="control">
-	<source src="01_helloworld.mp4" type="video/mp4"/>  		
+	<source src="assets/images/01_helloworld.mp4" type="video/mp4"/>  		
 	Your Browser does not support the video element
 </video>
+
 
 - To erase the ROM on the cartridge, reboot the machine and hold the `arrow up` key. In the recovery mode, choose `F1 - Erase MegaFlashROM`. Now it is ready for your next program.
 
