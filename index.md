@@ -38,6 +38,7 @@ For developing for MSX on a real MSX1, I recommend
 - [How to create a ROM, BIN or CAS file](02_rombincas.html)
 - [Updating variables when compiling as ROM](05_romvar.html)
 - [Visualizing bit level operations](07_bitleveloperations.html)
+- [Hooks and interrupts](08_hooks_interrupts.html)
 
 
 
