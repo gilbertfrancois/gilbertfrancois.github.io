@@ -36,6 +36,6 @@ The tutorial is as close as possible equal to the version cross-platform develop
 
 ## Download links
 
-- [helloworld_source](assets/downloads/helloworld_src.wav): WAV file with the source code. Record the sound to cassette and load it in Champ with the command `<ASSEMBLER> L => [ret]` .
+- [HELLOW (source code)](assets/downloads/champ_helloworld_src.wav): WAV file with the source code. Record the sound to cassette and load it in Champ with the command `<ASSEMBLER> L => [ret]` .
+- [HELLOB (binary code)](assets/downloads/champ_helloworld_bin.wav): WAV file with the binary. Record the sound to cassette and load it in MSX Basic with the command `bload"cas:",r`.
 
-- [helloworld_bin](assets/downloads/helloworld_bin.wav): WAV file with the binary. Record the sound to cassette and load it in MSX Basic with the command `bload"cas:",r`.
