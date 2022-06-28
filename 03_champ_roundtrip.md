@@ -4,7 +4,7 @@
 
 [< Back to main page](index.html)
 
-![](/Users/gilbert/Development/git/gilbertfrancois.github.io/assets/images/03_champ_intro_header.jpg)
+![](assets/images/03_champ_intro_header.jpg)
 
 This page shows how you can develop assembly code in Champ, use and test your program in Basic, and go back to Champ for further development. In this example, I loosly follow *ChibiAkumas'* tutorial [Learn Z80 Assembly Lesson 3](https://www.youtube.com/watch?v=zPXmvoZz9Nk&list=PLp_QNRIYljFq-9nFiAUiAkRzAXfcZTBR_&index=3). Please check out his lesson to learn what the code is doing.  We will make a small program in assembly that performs a naive *add* or *subtract* operation on single byte integers. We will make:
 
