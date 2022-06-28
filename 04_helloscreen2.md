@@ -4,7 +4,7 @@ _Gilbert Francois Duivesteijn_
 
 [< Back to main page](index.html)
 
-![](04_helloscreen2_title.jpg)
+![](assets/images/04_helloscreen2_title.jpg)
 
 The goal of this page is to show how to create graphics in screen mode 2. The examples in this page are the very minimum to create a tile, an 8x8 pixel sized block. Both examples give the output as seen in the screenshot above.
 
@@ -16,7 +16,7 @@ The goal of this page is to show how to create graphics in screen mode 2. The ex
 
 *Note: On the MSX1, there are some details to be careful with!* The command **otir** to copy a block of memory to the VRAM cannot be used on an MSX1. There is a speed limit when accessing the VRAM of 29 cycles. The otir instruction is too fast and it results in incomplete tiles in VRAM. On the (real) MSX1, I had lines skipped in the tiles. The examples on this page will be using an alternative routine for the **otir** instruction, as suggested by Grauw (see references). The MSX2 does not have these speed limits, since the VDP is faster than the **otir** instruction.
 
-## Method 1: using mostly easy BIOS functions
+## Method 1: using easy BIOS functions
 
 Using bios functions gives the benefit of smaller code and guaranteed to work subroutines. The downside is that it might be not the most efficient way to perform tasks.
 
@@ -260,15 +260,16 @@ $ <path to>/openmsx -machine C-BIOS_MSX1_EU -cart out.rom
 
 Now you should see 3 coloured blocks as in the first example.
 
-
+![](assets/images/03_champ_screen2_0007.png)
 
 ## References 
 
 -  [VDP programming tutorial :: VRAM timings](http://map.grauw.nl/articles/vdp_tut.php#vramtiming)
 - [Overview of MSX 1 BIOS Functions](http://map.tni.nl/resources/msxbios.php#msx1bios)
-- [V9918 programmer's guide (MSX1)](ti-vdp-programmers-guide.pdf)
-
-- [V9938 programmer's guide (MSX2)](http://rs.gr8bit.ru/Documentation/V9938-programmers-guide.pdf)
-
+-  [V9918 programmer's guide (MSX1)](ti-vdp-programmers-guide.pdf)
+-  [V9938 programmer's guide (MSX2)](http://rs.gr8bit.ru/Documentation/V9938-programmers-guide.pdf)
 - [More Screen2 for MSX1 example code](https://www.msx.org/forum/development/msx-development/getting-started-msx-coding-assembler)
+- [MSX Inside 006-INTERRUPCIONES VBLANK (Video in Spanish, turn on subtitles with autotranslation)](https://www.youtube.com/watch?v=aUkHk_mjtOU)
+
+- [MSX Assembly Page](http://map.grauw.nl/articles/)
 

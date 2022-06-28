@@ -2,7 +2,7 @@
 
 _Gilbert François Duivesteijn_
 
-![Screenshot](01_helloworld_title03.jpg)
+![Screenshot](assets/images/00_index_header.jpg)
 
 
 
@@ -33,7 +33,7 @@ For developing for MSX on a real MSX1, I recommend
 
 ## Howto's: Cross platform development
 
-- [Hello World: compile, run and debug on openMSX, deploy on a real cartridge](01_helloworld_openmsx.html)
+- [Hello World: compile, run and debug on openMSX, deploy on a real cartridge](01_helloworld.html)
 - [Hello Screen2: VDP programming for MSX1](04_helloscreen2.html)
 - [How to create a ROM, BIN or CAS file](02_rombincas.html)
 - [Updating variables when compiling as ROM](05_romvar.html)
