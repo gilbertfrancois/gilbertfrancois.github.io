@@ -19,7 +19,7 @@ A recommended way to use hooks is:
 - Make a copy of the current hook. For example, on disk systems, you cannot assume that the HTIMI hook is empty.
 - Place a `jp addr` instruction at the place of the hook, pointing to your subroutine. End the hook with `ret` instructions.
 - Make sure the length of the hook instruction is 5 bytes in size, overwrite all existing values to avoid bugs in case the hook was not empty.
-- Inside your subroutine, run your code, followed by a `jp old_hook_add` command.
+- Inside your subroutine, run your code, followed by a `jp old_hook_address` command.
 
 The example below is a minimal example, that gives a BEEP every second on a 50Hz machine. The HTIMI hook is used, which is triggered at the refresh rate of the screen (VBLANK). 
 
