@@ -42,7 +42,18 @@ The program does not give an output to screen. We can only observe the changes w
     <td style="width: 50%;"><img src="assets/images/03_champ_debug_003.png"></td>
   </tr>
 </table>
-...
+
+
+## Disassember
+
+<table>
+  <tr>
+    <td style="width: 50%;"><code>Q saddr [faddr]</code><br><br>
+      This shows the disassembled code, from the given start address. </td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_004.png"></td>
+  </tr>
+</table>
+
 
 ## Step through code, inspect registers and flags
 
@@ -53,4 +64,3 @@ The program does not give an output to screen. We can only observe the changes w
     <td style="width: 50%;"><img src="assets/images/03_champ_debug_005.png"></td>
   </tr>
 </table>
-
