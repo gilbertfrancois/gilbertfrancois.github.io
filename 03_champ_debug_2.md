@@ -64,3 +64,81 @@ The program does not give an output to screen. We can only observe the changes w
     <td style="width: 50%;"><img src="assets/images/03_champ_debug_005.png"></td>
   </tr>
 </table>
+
+
+## Inspect variable
+
+<table>
+  <tr>
+    <td style="width: 50%;"><code>H label</code><br><br>
+      To see the address of a label, type e.g. <code>H SMILEY</code>. The memory address of the label is then snown in HEX, DEC and BIN format. The value of the memory can be inspected with <code>D saddr faddr</code>. In the case of the example, where SMILEY is an array of 8 bytes:<br><br>
+    <code>H SMILEY</code><br>
+    <code>D $C01D $C024</code>
+    <br><br>It shows the initial values of the array. Now run the program and inspect again the SMILEY array.<br><br>
+    <code>G $C000</code><br>
+    <code>D $C01D $C024</code><br><br>
+    We see now that the array is filled with the inverted smiley.
+    </td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_006.png"></td>
+  </tr>
+</table>
+
+
+
+## Set breakpoint
+
+<table>
+  <tr>
+    <td style="width: 50%;"><code>Bn=addr</code><br><br>
+      Set a breakpoint at given address, where <code>n</code> is a number between 1 and 8. E.g.<br><br>
+      <code>B1=C00C</code><br><br>
+      A breakpoint is set just after the copy command from VRAM to RAM. When running the program from the start, it will stop at the breakpoint and show the register and program counter view.
+    </td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_007.png"></td>
+  </tr>
+</table>
+
+
+
+## List breakpoints
+
+<table>
+  <tr>
+    <td style="width: 50%;"><code>T</code><br><br>
+      Show all breakpoints
+    </td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_008.png"></td>
+  </tr>
+</table>
+
+
+
+## Show all labels
+
+<table>
+  <tr>
+    <td style="width: 50%;"><code>D E000</code><br><br>
+      Show all labels. Every label uses 8 bytes. The first 2 bytes indicate the memory address, the second 6 bytes are filled with the label name. Note that the labels are stored in human readible order (big endian). In the example on the left, we can see our own defined labels <code>SMILEY</code> (at address <code>$C01D</code>), <code>AGAIN</code> and <code>PRGEND</code>.
+    </td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_009.png"></td>
+  </tr>
+</table>
+
+
+
+## Clear memory, fill memory
+
+<table>
+  <tr>
+    <td style="width: 50%;"><code>F saddr faddr value</code><br><br>
+      Most of the time, it can be helpful to clear the memory, before running the program again. To do that, you can use the fill command <code>F</code>. E.g. if we want to clear the memory, recompile the program, you can do: <code>F C000 C0FF 00</code>
+    </td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_010.png"></td>
+  </tr>
+</table>
+
+
+
+## Downloads
+
+- [DBGSRC (Source code)](assets/downloads/champ_debug_src.wav)
