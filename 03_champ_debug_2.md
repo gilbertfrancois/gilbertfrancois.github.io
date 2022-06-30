@@ -42,5 +42,15 @@ The program does not give an output to screen. We can only observe the changes w
     <td style="width: 50%;"><img src="assets/images/03_champ_debug_003.png"></td>
   </tr>
 </table>
+...
 
-wip...
+## Step through code, inspect registers and flags
+
+<table>
+  <tr>
+    <td style="width: 50%;"><code>J saddr</code>, <code>J</code>, <code>J</code>...<br><br>
+      The <code>J saddr</code> allows you to step through code line by line. Continue by pressing <code>J</code> to step into the next line. This view shows the registers, flags, program count, program listing, etc.<br><br>In this example on the left, you can see that the program has executed the first 3 lines of the code, loaded registers LH, DE and BC with values. When you press at this point another time <code>J</code>, the line <code>CALL LDIRMV</code> is executed and the labeled data array <code>SMILEY</code> is filled with new data.</td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_005.png"></td>
+  </tr>
+</table>
+
