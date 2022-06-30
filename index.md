@@ -6,6 +6,8 @@ _Gilbert François Duivesteijn_
 
 
 
+
+
 ## Abstract
 
 I started these pages to document my journey into programming with assembly for the MSX1. I made personal notes and decided to put them online. It is hard to start, to learn and choose the right tools. Although there are plenty of very good resources on the web, most of them assume that you already have a good working development environment or basic knowledge about assembly for the Z80. 
