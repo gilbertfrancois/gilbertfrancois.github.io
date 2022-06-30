@@ -6,7 +6,7 @@ _Gilbert Francois Duivesteijn_
 
 ![header](assets/images/03_champ_debug_header.jpg)
 
-This page shows how to use Champ for debugging, stepping through code, inspect registers and more. It is by far the most interesting page about champ on this website :) Let's start with typing in some code. The program is absolutely useless and does not do much. But it will help to demonstrate all the goodies that Champ has to offer as a complete development tool.
+This page shows how to use Champ for debugging, stepping through code, inspect registers and more. It is by far the most interesting page about champ on this website :) Let's start with typing in some code. Our test code is absolutely useless and does not do much. But it will help to demonstrate all the goodies that Champ has to offer as a complete development tool.
 
 
 
@@ -33,7 +33,6 @@ The program does not give an output to screen. We can only observe the changes w
 </table>
 
 
-
 ## Memory monitor
 
 <table>
@@ -44,16 +43,16 @@ The program does not give an output to screen. We can only observe the changes w
   </tr>
 </table>
 
-## Disassembled code
+
+## Disassember
 
 <table>
   <tr>
     <td style="width: 50%;"><code>Q saddr [faddr]</code><br><br>
-    This shows the disassembled code, from the given start address. Go to next page by pressing <code>enter</code>.</td>
+      This shows the disassembled code, from the given start address. </td>
     <td style="width: 50%;"><img src="assets/images/03_champ_debug_004.png"></td>
   </tr>
 </table>
-
 
 
 ## Step through code, inspect registers and flags
@@ -65,7 +64,6 @@ The program does not give an output to screen. We can only observe the changes w
     <td style="width: 50%;"><img src="assets/images/03_champ_debug_005.png"></td>
   </tr>
 </table>
-
 
 
 ## Inspect variable
@@ -144,4 +142,3 @@ The program does not give an output to screen. We can only observe the changes w
 ## Downloads
 
 - [DBGSRC (Source code)](assets/downloads/champ_debug_src.wav)
-
