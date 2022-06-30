@@ -43,14 +43,4 @@ The program does not give an output to screen. We can only observe the changes w
   </tr>
 </table>
 
-
-## Disassembled code
-
-<table>
-  <tr>
-    <td style="width: 50%;"><code>Q saddr [faddr]</code><br><br>
-    This shows the disassembled code, from the given start address. Go to next page by pressing <code>enter</code>.</td>
-    <td style="width: 50%;"><img src="assets/images/03_champ_debug_004.png"></td>
-  </tr>
-</table>
-
+wip...
