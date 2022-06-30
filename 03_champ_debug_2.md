@@ -6,7 +6,7 @@ _Gilbert Francois Duivesteijn_
 
 ![header](assets/images/03_champ_debug_header.jpg)
 
-This page shows how to use Champ for debugging, stepping through code, inspect registers and more. It is by far the most interesting page about champ on this website :) Let's start with typing in some code. The program is absolutely useless and does not do much. But it will help to demonstrate all the goodies that Champ has to offer as a complete development tool.
+This page shows how to use Champ for debugging, stepping through code, inspect registers and more. It is by far the most interesting page about champ on this website :) Let's start with typing in some code. Our test code is absolutely useless and does not do much. But it will help to demonstrate all the goodies that Champ has to offer as a complete development tool.
 
 
 
@@ -42,3 +42,14 @@ The program does not give an output to screen. We can only observe the changes w
     <td style="width: 50%;"><img src="assets/images/03_champ_debug_003.png"></td>
   </tr>
 </table>
+
+
+## Disassembled code
+
+<table>
+  <tr>
+    <td style="width: 50%;"><tt>Q saddr [faddr]</tt><br><br>This shows the disassembled code, from the given start address. Go to next page by pressing <tt>enter</tt>.</td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_004.png"></td>
+  </tr>
+</table>
+
