@@ -31,3 +31,14 @@ The program does not give an output to screen. We can only observe the changes w
     <td><img src="assets/images/03_champ_debug_002.png"></td>
   </tr>
 </table>
+
+
+## Memory monitor
+
+<table>
+  <tr>
+    <td style="width: 50%;"><tt>D saddr [faddr]</tt><br><br>
+      To see the compiled program as bytes in memory, type . You can clearly see the reserved memory for our data array, 8 times <tt>$F0</tt>.</td>
+    <td style="width: 50%;"><img src="assets/images/03_champ_debug_003.png"></td>
+  </tr>
+</table>
