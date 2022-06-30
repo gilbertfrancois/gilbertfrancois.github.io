@@ -34,6 +34,10 @@ The tutorial is as close as possible equal to the version cross-platform develop
 
 
 
+If you're ready for using Champ in its full potential, check out [Champ: Debug, set breakpoints, monitor registers, step though code](03_champ_debug.html).
+
+
+
 ## Download links
 
 - [HELLOW (source code)](assets/downloads/champ_helloworld_src.wav): WAV file with the source code. Record the sound to cassette and load it in Champ with the command `<ASSEMBLER> L => [ret]` .
