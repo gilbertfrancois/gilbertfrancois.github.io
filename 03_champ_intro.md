@@ -137,4 +137,4 @@ Change between `<insert>` and `<edit>` mode by pressing `<enter>`. It takes a bi
 
 ---
 
-*Special note: A big "thank you" goes to [Denis Kovasevic](http://gems-lighted.com) who helped me with a replacement of my lost boxed version of Champ.*
+*Special note: A big "thank you" goes to [Denis Kobasevic](http://gems-lighted.com) who helped me with a replacement of my lost boxed version of Champ.*
