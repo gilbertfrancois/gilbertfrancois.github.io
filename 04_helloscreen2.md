@@ -26,27 +26,35 @@ Using bios functions gives the benefit of smaller code and guaranteed to work su
 ; Hello Screen2
 ; Minimal example for showing an 8x8 bitmap in screen 2,
 ; using BIOS functions.
-;
+
+; ==[ Constants ]===============================================
+
 ORGADR      equ $4000
+
 CHGMOD      equ $005f
 ; Function : Switches to given screenmode
 ; Input    : A  - screen mode
 ; Registers: All
+
 LDIRVM      equ $005c
 ; Function : Block transfer from memory to VRAM 
 ; Input    : BC - blocklength
 ;            DE - Start address of VRAM
 ;            HL - Start address of memory
 ; Registers: All
+
 SETWRT      equ $0053
 ; Function: sets VRAM address to VDP and enables it to be written.
 ; Input: HL for VRAM address
 ; Output: none
 ; Registers: AF
+
 VDPData     equ $98
 VDPControl  equ $99
 TilePos     equ 0 * 8
 RomSize     equ $4000
+
+; ==[ Header ]==================================================
 
 		; Place header inside the binary.
     org ORGADR
@@ -54,6 +62,8 @@ RomSize     equ $4000
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
+
+; ==[ Program ]=================================================
 
 Main:
     ; Change to screen 2
@@ -87,7 +97,6 @@ Main:
     di
     halt
 
-
 Pattern0:
     db %10101010
     db %01010101
@@ -108,6 +117,7 @@ Color0:
     db $14
     db $1d
 
+; ==[ ROM Padding ]=============================================
 
 ProgEnd:
     ds $4000 + RomSize - ProgEnd, 255
@@ -154,6 +164,9 @@ Using your own written functions gives the benefit of code that you fully unders
 ; Minimal example for showing an 8x8 bitmap in screen 2,
 ; using self written 'copy to VRAM' routines.
 ;
+
+; ==[ Constants ]===============================================
+
 ORGADR      equ $4000
 
 CHGMOD      equ $005f
@@ -166,12 +179,16 @@ VDPControl  equ $99
 RomSize     equ $4000
 TilePos     equ 0 * 8
 
+; ==[ Header ]==================================================
+
 	  ; Place header inside the binary.
     org ORGADR
     ; ROM header
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
+
+; ==[ Program ]=================================================
 
 Main:
     ; Change to screen 2
@@ -245,6 +262,7 @@ Color0:
     db $14
     db $1d
 
+; ==[ ROM Padding ]=============================================
 
 ProgEnd:
     ds $4000 + RomSize - ProgEnd, 255

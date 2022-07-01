@@ -17,6 +17,8 @@ Below is a small example of this (as BIN file).
 **Step 1**: Type in the source code on a PC or Mac:
 
 ```assembly
+; ==[ Constants ]===============================================
+
 ORGADR      equ $c000
 
 CHGMOD      equ $005f
@@ -42,6 +44,8 @@ VDPData     equ $98
 VDPControl  equ $99
 VramCache   equ $c400
 
+; ==[ Header ]==================================================
+
 		; Place header before the binary.
 		org ORGADR - 7
 		; BIN header, 7 bytes
@@ -51,6 +55,8 @@ VramCache   equ $c400
     dw Main
     ; org statement after the header
     org ORGADR
+
+; ==[ Program ]=================================================
 
 FileStart:
 Main:
@@ -64,7 +70,7 @@ Main:
     ld bc, $0800
     call LDIRMV
 
-    ;============================================================ 
+    ;===========================================================
     ld hl, VramCache  ; Start of the cache in RAM
     ld bc, $0800      ; Block size: 256 characters * 8 byte
 Again:
@@ -79,7 +85,7 @@ Again:
     ld a, b
     or c
     jr nz, Again      ; loop over given block size
-    ;============================================================ 
+    ;===========================================================
 
     ; Copy to the pattern table in VRAM
     ld hl, VramCache

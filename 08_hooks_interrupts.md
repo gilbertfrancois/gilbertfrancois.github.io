@@ -27,10 +27,15 @@ The example below is a minimal example, that gives a BEEP every second on a 50Hz
 
 ```assembly
 ; Simple interrupt test
+
+; ==[ Constants ]===============================================
+
 ORGADR   equ $c000
 BEEP     equ $00c0 ; Bios function, generates beep
 HTIMI    equ $fd9f ; Interrupt hook address, triggered at vblank
 MaxCount equ 50
+
+; ==[ Header ]==================================================
 
 		; Place header before the binary.
 		org ORGADR - 7
@@ -39,6 +44,9 @@ MaxCount equ 50
     dw FileStart
     dw FileEnd - 1
     dw Main
+    
+; ==[ Program ]=================================================
+
     ; org statement after the header
     org ORGADR
 

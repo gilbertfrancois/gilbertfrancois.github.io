@@ -19,10 +19,14 @@ The picture above shows the final result on a real MSX, running from cartridge. 
 **Step 2**: Type in the code below and save to a file named `helloworld.asm`.  [Link to GitHub](https://github.com/gilbertfrancois/msx/tree/master/src/asm/01_helloworld)
 
 ```assembly
+; ==[ Constants ]===============================================
+
 ORGADR  equ $4000
 CHPUT   equ $00A2
 CHMOD   equ $005f
 RomSize equ $4000
+
+; ==[ Header ]==================================================
 
 		; org statement before the header
     org ORGADR
@@ -30,6 +34,8 @@ RomSize equ $4000
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
+
+; ==[ Program ]=================================================
 
 FileStart:
 Main:
@@ -65,6 +71,8 @@ Finished:
 
 helloWorld:
     db "Hello world!", 0
+
+; ==[ ROM Padding ]=============================================
 
 FileEnd:
     ds $4000 + RomSize - FileEnd, 255

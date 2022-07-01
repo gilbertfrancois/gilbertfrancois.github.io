@@ -7,8 +7,12 @@ _Gilbert François Duivesteijn_
 When your program is compiled for cartridge as ROM, you cannot change values of variables in this memory area. For example:
 
 ```assembly
+; ==[ Constants ]===============================================
+
 ORGADR  equ $4000
 RomSize equ $4000
+
+; ==[ Header ]==================================================
 
 		; Place header inside the binary.
     org ORGADR
@@ -16,6 +20,8 @@ RomSize equ $4000
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
+
+; ==[ Program ]=================================================
 
 Main:
 		; increase the value of MyVar
@@ -31,6 +37,8 @@ Main:
 MyVar:
 		db $00
 		
+; ==[ ROM Padding ]=============================================
+
 ProgEnd:
     ds $4000 + RomSize - ProgEnd, 255
 ```
@@ -68,9 +76,13 @@ In the section `Memory layout` of the debugger, we can see that page 0 and 1 are
 Our `ORG` address is `$4000` and MyVar is located at `$4018`. Since this is still in ROM area, the memory content is read-only. The solution is to store the variables or anything that needs to be manipulated in memory, in RAM area. Page 2 and 3 are RAM. There are several ways to do that in code. However, most methods are assembler specific. The standard syntax that works with all assembers is by simply specifying the address as constant, e.g:`MyVarRam equ $c000`. The new listing is:
 
 ```assembly
+; ==[ Constants ]===============================================
+
 ORGADR   equ $4000
 RomSize  equ $4000
 MyVarRam equ $c000
+
+; ==[ Header ]==================================================
 
 		; Place header inside the binary.
     org ORGADR
@@ -78,6 +90,8 @@ MyVarRam equ $c000
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
+
+; ==[ Program ]=================================================
 
 Main:
     ; copy initial MyVar value to RAM.
@@ -99,6 +113,8 @@ Main:
 
 MyVar:
     db $00
+
+; ==[ ROM Padding ]=============================================
 
 ProgEnd:
     ds $4000 + RomSize - ProgEnd, 255
