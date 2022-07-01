@@ -17,13 +17,7 @@ Below is a small example of this (as BIN file).
 **Step 1**: Type in the source code on a PC or Mac:
 
 ```assembly
-    db $FE
-    dw FileStart
-    dw FileEnd - 1
-    dw Main
-
-    ; org statement after the header
-    org $c000
+ORGADR      equ $c000
 
 CHGMOD      equ $005f
 ; Function : Switches to given screenmode
@@ -48,6 +42,16 @@ VDPData     equ $98
 VDPControl  equ $99
 VramCache   equ $c400
 
+		; Place header before the binary.
+		org ORGADR - 7
+		; BIN header, 7 bytes
+    db $fe
+    dw FileStart
+    dw FileEnd - 1
+    dw Main
+    ; org statement after the header
+    org ORGADR
+
 FileStart:
 Main:
     ; Go to screen 1
@@ -66,7 +70,7 @@ Main:
 Again:
     ld a, (hl)
     ; uncomment one of the 3 lines below to see the effect
-    ; and %1111000    ; keep bits that are 1
+    ; and %11110000    ; keep bits that are 1
     ; or %11110000    ; set bits that are 1
     xor %11110000     ; invert bits that are 1     
     ld (hl), a
@@ -89,17 +93,29 @@ FileEnd:
 
 ```
 
-**Step 2**: *Compile  with Glass (or another assembler of your choice)*
+
+
+**Step 2**: *Compile with VASM*
 
 ```shell
-$ java -jar Glass.jar bitleveloperations_bin.asm -L out.sym out.bin
+$ vasmz80_oldstyle bitleveloperations_bin.asm -chklabels -nocase -Dvasm=1 -Fbin -L out.sym -o out.rom
 ```
+
+*or with Glass (you can choose)*
+
+```shell
+$ java -jar Glass.jar bitleveloperations_bin.asm -L out.sym out.rom
+```
+
+
 
 **Step 3**: run with openMSX. Set the floppy drive to the build directory and in MSX Basic type:
 
 ```sh
 bload"out.bin"
 ```
+
+
 
 **Step 4**: Run your program. In basic, type:
 

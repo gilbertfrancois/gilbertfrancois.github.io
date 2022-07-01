@@ -1,3 +1,5 @@
+
+
 # Hooks and interrupts
 
 _Gilbert Francois Duivesteijn_
@@ -25,19 +27,20 @@ The example below is a minimal example, that gives a BEEP every second on a 50Hz
 
 ```assembly
 ; Simple interrupt test
+ORGADR   equ $c000
+BEEP     equ $00c0 ; Bios function, generates beep
+HTIMI    equ $fd9f ; Interrupt hook address, triggered at vblank
+MaxCount equ 50
 
-    ; BIN header
-    db $FE
+		; Place header before the binary.
+		org ORGADR - 7
+		; BIN header, 7 bytes
+    db $fe
     dw FileStart
     dw FileEnd - 1
     dw Main
-
     ; org statement after the header
-    org $C000
-
-BEEP     equ $00c0
-HTIMI    equ $fd9f
-MaxCount equ 50
+    org ORGADR
 
 FileStart:
 Main:
@@ -84,8 +87,13 @@ Counter:
 FileEnd:
 ```
 
-Compile with:
+*Compile with VASM*
 
+```shell
+$ vasmz80_oldstyle beep.asm -chklabels -nocase -Dvasm=1 -Fbin -L out.sym -o out.bin
+```
+
+*or with Glass*
 ```shell
 $ java -jar Glass.jar beep.asm -L out.sym out.bin
 ```

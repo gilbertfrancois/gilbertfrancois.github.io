@@ -7,13 +7,15 @@ _Gilbert François Duivesteijn_
 When your program is compiled for cartridge as ROM, you cannot change values of variables in this memory area. For example:
 
 ```assembly
+ORGADR  equ $4000
+RomSize equ $4000
+
+		; Place header inside the binary.
+    org ORGADR
     ; ROM header
-    org $4000
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
-
-RomSize     equ $4000
 
 Main:
 		; increase the value of MyVar
@@ -31,6 +33,18 @@ MyVar:
 		
 ProgEnd:
     ds $4000 + RomSize - ProgEnd, 255
+```
+
+*Compile with VASM*
+
+```shell
+$ vasmz80_oldstyle hello_screen2.asm -chklabels -nocase -Dvasm=1 -Fbin -L out.sym -o out.rom
+```
+
+*or with Glass (you can choose)*
+
+```shell
+$ java -jar Glass.jar hello_screen2.asm -L out.sym out.rom
 ```
 
 This example won't work. The memory of MyVar lies inside the ROM. Let's look at the debugger and see what is happening. Pay special attention to memory location `$4018`, where `MyVar` is located.
@@ -54,14 +68,16 @@ In the section `Memory layout` of the debugger, we can see that page 0 and 1 are
 Our `ORG` address is `$4000` and MyVar is located at `$4018`. Since this is still in ROM area, the memory content is read-only. The solution is to store the variables or anything that needs to be manipulated in memory, in RAM area. Page 2 and 3 are RAM. There are several ways to do that in code. However, most methods are assembler specific. The standard syntax that works with all assembers is by simply specifying the address as constant, e.g:`MyVarRam equ $c000`. The new listing is:
 
 ```assembly
+ORGADR   equ $4000
+RomSize  equ $4000
+MyVarRam equ $c000
+
+		; Place header inside the binary.
+    org ORGADR
     ; ROM header
-    org $4000
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
-
-RomSize  equ $4000
-MyVarRam equ $c000
 
 Main:
     ; copy initial MyVar value to RAM.

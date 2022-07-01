@@ -27,24 +27,33 @@ Using bios functions gives the benefit of smaller code and guaranteed to work su
 ; Minimal example for showing an 8x8 bitmap in screen 2,
 ; using BIOS functions.
 ;
+ORGADR      equ $4000
+CHGMOD      equ $005f
+; Function : Switches to given screenmode
+; Input    : A  - screen mode
+; Registers: All
+LDIRVM      equ $005c
+; Function : Block transfer from memory to VRAM 
+; Input    : BC - blocklength
+;            DE - Start address of VRAM
+;            HL - Start address of memory
+; Registers: All
+SETWRT      equ $0053
+; Function: sets VRAM address to VDP and enables it to be written.
+; Input: HL for VRAM address
+; Output: none
+; Registers: AF
+VDPData     equ $98
+VDPControl  equ $99
+TilePos     equ 0 * 8
+RomSize     equ $4000
+
+		; Place header inside the binary.
+    org ORGADR
     ; ROM header
-    org $4000
     db "AB"
     dw Main
     dw 0, 0, 0, 0, 0, 0
-
-CHGMOD      equ $005f
-    ; a for screen mode
-LDIRVM      equ $005c
-    ; HL for source address (memory), 
-    ; DE for destination address (VRAM), 
-    ; BC for the length. All bits of the VRAM address are valid.
-SETWRT      equ $0053
-    ;HL for VRAM address
-VDPData     equ $98
-VDPControl  equ $99
-RomSize     equ $4000
-TilePos     equ 0 * 8
 
 Main:
     ; Change to screen 2
@@ -145,18 +154,24 @@ Using your own written functions gives the benefit of code that you fully unders
 ; Minimal example for showing an 8x8 bitmap in screen 2,
 ; using self written 'copy to VRAM' routines.
 ;
-    ; ROM header
-    org $4000
-    db "AB"
-    dw Main
-    dw 0, 0, 0, 0, 0, 0
+ORGADR      equ $4000
 
 CHGMOD      equ $005f
-    ; a for screen mode
+; Function : Switches to given screenmode
+; Input    : A  - screen mode
+; Registers: All
+
 VDPData     equ $98
 VDPControl  equ $99
 RomSize     equ $4000
 TilePos     equ 0 * 8
+
+	  ; Place header inside the binary.
+    org ORGADR
+    ; ROM header
+    db "AB"
+    dw Main
+    dw 0, 0, 0, 0, 0, 0
 
 Main:
     ; Change to screen 2
