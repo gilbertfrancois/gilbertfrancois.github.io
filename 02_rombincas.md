@@ -18,6 +18,7 @@ RomSize equ $4000
 
 		; Place header inside the binary.
     org ORGADR
+    
     ; ROM header
     db "AB"
     dw Main
@@ -39,11 +40,13 @@ ORGADR equ $c000
 
 		; Place header before the binary.
 		org ORGADR - 7
+		
 		; BIN header, 7 bytes
     db $fe
     dw FileStart
     dw FileEnd - 1
     dw Main
+    
     ; org statement after the header
     org ORGADR
 
@@ -64,6 +67,7 @@ ORGADR equ $c000
 
 		; Place header before the binary.
 		org ORGADR - 38
+    
     ; CAS header with the filename, 38 bytes
     db $1f, $a6, $de, $ba, $cc, $13, $7d, $74
     db $d0, $d0, $d0, $d0, $d0, $d0, $d0, $d0, $d0, $d0
