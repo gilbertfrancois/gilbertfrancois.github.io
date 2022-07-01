@@ -28,7 +28,7 @@ RomSize equ $4000
 
 ; ==[ Header ]==================================================
 
-		; org statement before the header
+		; Place header inside the binary.
     org ORGADR
     ; ROM header
     db "AB"
