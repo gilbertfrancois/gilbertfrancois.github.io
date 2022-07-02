@@ -46,9 +46,9 @@ Finish:
 
 
 
-In Champ, it will look something like in the screenshot below, where the **NOP** instructions stand for the body of the program.
+In Champ, it will look something like in the screenshot below, where the 3 **NOP** instructions are a placeholder for your program.
 
-![champ](04_helloscreen2_champ0002.png)
+![champ](assets/images/03_champ_screen2_0002.png)
 
 
 ## Implementation of Method 1
