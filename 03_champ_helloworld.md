@@ -22,7 +22,7 @@ The tutorial is as close as possible equal to the version cross-platform develop
 
 | Description                                                  | Screenshot                                               |
 | ------------------------------------------------------------ | -------------------------------------------------------- |
-| Type in the code. Note the small differences, compared to ROM version mentioned earlier. This binary will be loaded from tape. The ORG address is different and when the program finishes, we return to Basic, instead of calling the HALT instruction. | ![Champ 01](assets/images/03_champ000listing.png)        |
+| Type in the code. Note the small differences, compared to ROM version mentioned earlier. This binary will be loaded from tape. The ORG address is different and when the program finishes, we return to Basic, instead of calling the HALT instruction. | ![Champ 01](assets/images/03_champ_helloworld_00001.png) |
 | Put in an empty cassette in the datarecorder. Go to `<assemble>` mode and press `S` followed by a 6 character long filename to store your *source code* to tape. | ![Champ 02](assets/images/03_champ_helloworld_00002.png) |
 | To compile the program, press `A`,`2`. For other options, refer to [Champ: First steps...](03_champ_1.html). | ![Champ 02](assets/images/03_champ_helloworld_00003.png) |
 | To run the program, press `ESC` to enter the `<debug>` mode. Note that we used $C000 as our org address, that will be the starting point to call our program. Type in `G $C000` to start and run the program. | ![Champ 02](assets/images/03_champ_helloworld_00004.png) |
