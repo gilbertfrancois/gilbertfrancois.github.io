@@ -28,7 +28,7 @@ The tutorial is as close as possible equal to the version cross-platform develop
 | To run the program, press `ESC` to enter the `<debug>` mode. Note that we used $C000 as our org address, that will be the starting point to call our program. Type in `G $C000` to start and run the program. | ![Champ 02](assets/images/03_champ_helloworld_00004.png) |
 | Voila! It works. Because we started the program with the command `G`, we are back in Champ development environment when the program finishes. So ending our code with with RET instead of HALT is important here ;) | ![Champ 02](assets/images/03_champ_helloworld_00005.png) |
 | Finally, we want to save our binary to cassette, to be able to run it everywhere. To be able to do that, we need to find the end  address of our binary. Goto `<debug>` mode and list the program with `Q $C000`. | ![Champ 02](assets/images/03_champ_helloworld_00006.png) |
-| The format for saving a binary is: `W saddr faddr filename`. So in our case it will be `W C000 C036 HELLOB`, where hellob is a random chosen filename. | ![Champ 02](assets/images/03_champ_helloworld_00007.png) |
+| The format for saving a binary is: `W saddr faddr filename`. So in our case it will be `W C000 C033 HELLOB`, where hellob is a random chosen filename. | ![Champ 02](assets/images/03_champ_helloworld_00007.png) |
 | Moment of truth. The source file and binary file have been saved to tape. Let's **reset** the computer, **rewind** the tape and run our fresh made program: `bload"cas:",r` | ![Champ 02](assets/images/03_champ_helloworld_00008.png) |
 | Yay!                                                         | ![Champ 02](assets/images/03_champ_helloworld_00009.png) |
 
