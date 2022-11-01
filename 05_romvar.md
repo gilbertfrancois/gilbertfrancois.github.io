@@ -134,11 +134,19 @@ First, we copy the initial values from ROM to RAM (when needed). Then we continu
 When you have many variables, lists or other data, you can declare them as follows:
 
 ```assembly
-MyOneByteVarRam    equ $c000
-My10ByteListRam    equ MyOneByteVar + 1
-My2ByteVarRam      equ My10ByteList + 10
-MyEndRamBlock	     equ My2ByteVarRam + 2
 
-TotalRamSize       equ MyEndRamBlock - MyOneByteVarRam
+; some var with size 1 byte
+MyOneByteVar     equ $c000
+
+; some list with size 10 bytes
+MyTenByteList    equ MyOneByteVar + 1
+
+; some var with size 2 bytes
+MyTwoByteVar     equ MyTenByteList + 10
+
+; end of the variable block
+MyEndRamBlock    equ MyTwoByteVar + 2
+
+TotalRamSize     equ MyEndRamBlock - MyOneByteVar
 ```
 
